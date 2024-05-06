@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aroma – log in or sign up</title>
+	<link rel="icon" href="website/img/Fevicon.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<div>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="signupUsername" placeholder="username" id="signupUsername">
+					<input type="password" name="signupPassword" placeholder="Password" id="signupPassword">
+					<button type="button" onclick="registerUser()">Sign up</button>
+				</div>
+			</div>
+
+			<div class="login">
+				<div>
+					<label for="chk" >Login</label>
+					<input type="text" id="loginUsername" placeholder="username" name="loginUsername">
+					<input type="password" id="loginPassword" placeholder="Password" name="loginPassword">
+					<button type="button" onclick="authenticateUser()">Login</button>
+				</div>
+			</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
